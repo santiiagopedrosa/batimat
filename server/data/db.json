@@ -1,0 +1,139 @@
+{
+  "settings": {
+    "siteName": "BATIMAT",
+    "tagline": "Construção civil e reabilitação",
+    "hero": {
+      "eyebrow": "Construção civil · Oeste de Portugal",
+      "title": "Construímos com obra feita, não com promessas.",
+      "subtitle": "Construção nova, reabilitação e remodelação para clientes particulares e empresas. Orçamentos claros, prazos cumpridos, acompanhamento direto em obra."
+    },
+    "about": {
+      "title": "Uma equipa de obra, do projeto à entrega",
+      "paragraphs": [
+        "A BATIMAT é uma empresa de construção civil dedicada à construção nova, reabilitação de edifícios e remodelação de interiores. Trabalhamos com equipas próprias e parceiros certificados, o que nos permite controlar a qualidade e o calendário de cada obra.",
+        "Acompanhamos o cliente em todas as fases: levantamento, orçamentação, licenciamento, execução e entrega. Cada projeto tem um responsável direto, com quem o cliente fala sem intermediários."
+      ],
+      "services": [
+        "Construção nova",
+        "Reabilitação de edifícios",
+        "Remodelação de interiores",
+        "Ampliações e anexos",
+        "Estruturas e alvenarias",
+        "Acabamentos e carpintarias"
+      ]
+    },
+    "contacts": {
+      "email": "geral@batimat.pt",
+      "phone": "+351 262 000 000",
+      "mobile": "+351 910 000 000",
+      "address": "Zona Industrial, Lote 12\n2500-000 Caldas da Rainha",
+      "schedule": "Segunda a sexta · 08h00–18h00"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Moradia Vale Real",
+      "slug": "moradia-vale-real",
+      "category": "Construção nova",
+      "location": "Caldas da Rainha",
+      "year": 2025,
+      "area": "240 m²",
+      "shortDescription": "Moradia unifamiliar T4 com piscina, construída de raiz num lote de 800 m².",
+      "description": "Construção de raiz de uma moradia unifamiliar T4 de dois pisos, com estrutura em betão armado, isolamento térmico pelo exterior (ETICS) e caixilharia com corte térmico.\n\nA obra incluiu todos os arranjos exteriores: muros, piscina de 8×4 m, deck e zonas ajardinadas. Prazo de execução de 14 meses, entregue dentro do calendário contratado.",
+      "cover": "/uploads/ph-01.svg",
+      "gallery": [
+        "/uploads/ph-07.svg",
+        "/uploads/ph-08.svg"
+      ],
+      "exclusive": false,
+      "featured": true,
+      "createdAt": "2025-09-10T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Reabilitação Rainha D. Leonor",
+      "slug": "reabilitacao-rainha-d-leonor",
+      "category": "Reabilitação",
+      "location": "Caldas da Rainha",
+      "year": 2024,
+      "area": "520 m²",
+      "shortDescription": "Reabilitação integral de um edifício de habitação do início do séc. XX no centro histórico.",
+      "description": "Reabilitação integral de um edifício de habitação multifamiliar no centro histórico, mantendo a fachada original e os elementos de cantaria.\n\nA intervenção incluiu reforço estrutural, novas redes de águas, esgotos e eletricidade, reorganização dos interiores em quatro frações e recuperação das caixilharias em madeira de acordo com as exigências camarárias.",
+      "cover": "/uploads/ph-02.svg",
+      "gallery": [
+        "/uploads/ph-08.svg"
+      ],
+      "exclusive": false,
+      "featured": true,
+      "createdAt": "2024-11-02T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Armazém Logístico Gaeiras",
+      "slug": "armazem-logistico-gaeiras",
+      "category": "Industrial",
+      "location": "Óbidos",
+      "year": 2024,
+      "area": "1 100 m²",
+      "shortDescription": "Pavilhão industrial com zona administrativa, cais de carga e logradouro pavimentado.",
+      "description": "Construção de um pavilhão logístico com estrutura metálica, painel sandwich e pavimento industrial afagado com endurecedor de superfície.\n\nO projeto incluiu uma zona administrativa de dois pisos, cais de carga nivelador e 2 000 m² de logradouro pavimentado para manobra de pesados.",
+      "cover": "/uploads/ph-03.svg",
+      "gallery": [
+        "/uploads/ph-07.svg"
+      ],
+      "exclusive": false,
+      "featured": false,
+      "createdAt": "2024-06-15T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Apartamento Av. 1.º de Maio",
+      "slug": "apartamento-av-1-de-maio",
+      "category": "Remodelação",
+      "location": "Leiria",
+      "year": 2025,
+      "area": "130 m²",
+      "shortDescription": "Remodelação total de apartamento T3: cozinha aberta, duas casas de banho novas e pavimentos.",
+      "description": "Remodelação integral de um apartamento T3 habitado nos anos 90. Demolição de paredes interiores para criar uma cozinha aberta sobre a sala, substituição completa das redes de água e eletricidade, novas casas de banho e pavimento flutuante em toda a habitação.\n\nObra executada em 10 semanas com o edifício em pleno funcionamento.",
+      "cover": "/uploads/ph-04.svg",
+      "gallery": [],
+      "exclusive": false,
+      "featured": false,
+      "createdAt": "2025-03-20T10:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Unidade Hoteleira Foz do Arelho",
+      "slug": "unidade-hoteleira-foz-do-arelho",
+      "category": "Turismo",
+      "location": "Foz do Arelho",
+      "year": 2026,
+      "area": "—",
+      "shortDescription": "Empreendimento turístico em curso junto à Lagoa de Óbidos. Detalhes disponíveis mediante contacto.",
+      "description": "Conteúdo reservado.",
+      "cover": "/uploads/ph-05.svg",
+      "gallery": [],
+      "exclusive": true,
+      "featured": false,
+      "createdAt": "2026-01-08T10:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "Condomínio Serra do Bouro",
+      "slug": "condominio-serra-do-bouro",
+      "category": "Construção nova",
+      "location": "Serra do Bouro",
+      "year": 2025,
+      "area": "—",
+      "shortDescription": "Conjunto de moradias em banda para cliente privado. Detalhes disponíveis mediante contacto.",
+      "description": "Conteúdo reservado.",
+      "cover": "/uploads/ph-06.svg",
+      "gallery": [],
+      "exclusive": true,
+      "featured": false,
+      "createdAt": "2025-07-12T10:00:00.000Z"
+    }
+  ],
+  "leads": []
+}

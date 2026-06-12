@@ -1,0 +1,276 @@
+/* ============================================================
+   BATIMAT — sistema de design v2
+   Cormorant Garamond (display) · Inter (corpo) · IBM Plex Mono (técnico)
+   ============================================================ */
+
+:root {
+  /* === Paleta principal === */
+  --white:    #ffffff;
+  --cream:    #f8f7f3;
+  --pale:     #f0efe9;
+  --border:   #e2e0d9;
+  --stone:    #8a8780;
+  --text:     #1b1a17;
+  --black:    #0e0d0c;
+  --gold:     #b8903e;
+  --gold-bg:  #f5edd8;
+
+  /* === Compatibilidade backoffice (variáveis antigas com valores equivalentes) === */
+  --ink:      #1b1a17;
+  --ink-soft: #3d3b37;
+  --betao:    #f0efe9;
+  --paper:    #f8f7f3;
+  --aco:      #8a8780;
+  --amarelo:  #b8903e;
+  --linha:    #e2e0d9;
+  --erro:     #b03020;
+  --ok:       #2e7d4f;
+
+  /* === Tipografia === */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Inter', 'Helvetica Neue', sans-serif;
+  --font-mono:    'IBM Plex Mono', 'Courier New', monospace;
+
+  /* === Layout === */
+  --container: 1240px;
+  --gutter:    40px;
+  --ease:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media (max-width: 640px) {
+  :root { --gutter: 20px; }
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+::selection {
+  background: var(--gold-bg);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- Utilitários ---------- */
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+/* ---------- Botões ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: 1.5px solid var(--text);
+  background: var(--text);
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--text);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+}
+
+.btn--ghost:hover {
+  background: var(--text);
+  color: var(--white);
+}
+
+.btn--gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
+
+.btn--gold:hover {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--white);
+}
+
+/* Alias para compatibilidade com backoffice */
+.btn--yellow {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
+
+.btn--yellow:hover {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--white);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Etiquetas de categoria */
+.plate {
+  display: inline-block;
+  padding: 3px 9px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--pale);
+  color: var(--stone);
+  border: 1px solid var(--border);
+}
+
+.plate--gold {
+  background: var(--gold-bg);
+  color: var(--gold);
+  border-color: transparent;
+}
+
+.plate--dark {
+  background: var(--text);
+  color: var(--white);
+  border-color: transparent;
+}
+
+/* Aliases backoffice */
+.plate--outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+
+/* ---------- Formulários ---------- */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.field input,
+.field textarea,
+.field select {
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: var(--text);
+  background: var(--white);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-msg {
+  font-size: 13px;
+  padding: 10px 14px;
+}
+
+.form-msg--error {
+  background: #fef0ef;
+  color: var(--erro);
+  border-left: 3px solid var(--erro);
+}
+
+.form-msg--ok {
+  background: #edf6ef;
+  color: var(--ok);
+  border-left: 3px solid var(--ok);
+}
